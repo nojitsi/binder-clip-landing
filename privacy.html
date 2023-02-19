@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html, body {
+        height: calc(100% - 10px);;
+        background-color: black;
+      }
+
+      a {
+        color: whitesmoke;
+        font-size: 30px;
+      }
+
+      .label {
+        color: whitesmoke;
+        font-size: 30px;
+      }
+
+      header {      
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .h100 {
+        height: 90%;
+      }
+
+      .logo {
+        height: 64px;
+        width: 64px;
+      }
+
+      .logo-container {
+        padding: 5px;
+      }
+
+      .logo-words {
+        color: aliceblue;
+        font-size: 50px;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+
+      @media (max-width: 360px) {
+        .logo-words {
+          font-size: 40px;
+        } 
+      }
+
+      @media (max-height: 668px) {
+        .h100 {
+          height: 80%;
+        } 
+      }
+
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header>
+        <div class="logo-container">
+          <img class="logo" src="clip.png">
+        </div>
+        <div class="logo-words">
+          Binder clip
+        </div>
+    </header>
+    <div class="container h100">
+      <div class="label">No user data is collected</div>
+    </div>
+  </body>
+</html>
